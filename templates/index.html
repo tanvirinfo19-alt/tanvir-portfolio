@@ -119,13 +119,13 @@
     <section class="section contact-section" id="contact">
       <div class="section-label">05 / GET IN TOUCH</div>
       <div class="contact-layout">
-        <div><h2 class="section-title">Have an idea?<br><span>Let's talk.</span></h2><p class="contact-intro">I'm open to learning opportunities, collaborations, internships and meaningful conversations about technology.</p><a class="email-link" href="mailto:{{ profile.email }}">{{ profile.email }} ↗</a></div>
+        <div><h2 class="section-title">Have an idea?<br><span>Let's talk.</span></h2><p class="contact-intro">I'm open to learning opportunities, collaborations, internships and meaningful conversations about technology.</p><a class="email-link" href="mailto:tanvir.info19@gmail.com">{{ tanvir.info19@gmail.com }} ↗</a></div>
         <form class="contact-form" action="{{ url_for('contact') }}" method="POST">
           {% with messages = get_flashed_messages(with_categories=true) %}
             {% if messages %}{% for category, message in messages %}<div class="flash {{ category }}">{{ message }}</div>{% endfor %}{% endif %}
           {% endwith %}
           <label>Your name<input name="name" type="text" placeholder="Enter your name" required></label>
-          <label>Your email<input name="email" type="email" placeholder="tanvir.info19@gmail.com" required></label>
+          <label>Your email<input name="email" type="email" placeholder="Your Email here" required></label>
           <label>Your message<textarea name="message" rows="4" placeholder="Tell me about your idea..." required></textarea></label>
           <button class="button button-primary" type="submit">Send message <span>↗</span></button>
           <small>Demo form: messages appear in your Flask terminal. Connect an email service for live delivery.</small>
